@@ -77,3 +77,9 @@ Penjelasan:
 4. Metode `ubah_nilai_mahasiswa` mengubah nilai mahasiswa berdasarkan nama.
 5. Metode `hapus_mahasiswa` menghapus mahasiswa dari daftar berdasarkan nama.
 6. Metode `daftar_nilai_mahasiswa` menampilkan daftar nilai semua mahasiswa. Contoh penggunaan di bagian bawah menunjukkan bagaimana metode-metode ini dapat digunakan untuk mengelola data mahasiswa.
+
+
+<p>Berikut diagram class tersebut</p>
+
+![dgr](https://github.com/user-attachments/assets/2c1e1bad-e327-465c-a924-9727b8b22e87)
+
