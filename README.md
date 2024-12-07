@@ -1,7 +1,68 @@
 # labpy7
 
 ```python
-class Mahasiswa: def __init__(self, nama, nilai): self.nama = nama self.nilai = nilai class DaftarMahasiswa: def __init__(self): self.mahasiswa_list = [] def tambah_mahasiswa(self, nama, nilai): mahasiswa = Mahasiswa(nama, nilai) self.mahasiswa_list.append(mahasiswa) print(f"Data mahasiswa {nama} berhasil ditambahkan.") def ubah_nilai_mahasiswa(self, nama, nilai_baru): for mahasiswa in self.mahasiswa_list: if mahasiswa.nama == nama: mahasiswa.nilai = nilai_baru print(f"Nilai mahasiswa {nama} berhasil diubah menjadi {nilai_baru}.") return print(f"Mahasiswa dengan nama {nama} tidak ditemukan.") def hapus_mahasiswa(self, nama): for mahasiswa in self.mahasiswa_list: if mahasiswa.nama == nama: self.mahasiswa_list.remove(mahasiswa) print(f"Data mahasiswa {nama} berhasil dihapus.") return print(f"Mahasiswa dengan nama {nama} tidak ditemukan.") def daftar_nilai_mahasiswa(self): print("Daftar Nilai Mahasiswa:") for mahasiswa in self.mahasiswa_list: print(f"Nama: {mahasiswa.nama}, Nilai: {mahasiswa.nilai}") # Contoh penggunaan daftar = DaftarMahasiswa() daftar.tambah_mahasiswa("Alice", 85) daftar.tambah_mahasiswa("Bob", 90) daftar.daftar_nilai_mahasiswa() daftar.ubah_nilai_mahasiswa("Alice", 95) daftar.daftar_nilai_mahasiswa() daftar.hapus_mahasiswa("Bob") daftar.daftar_nilai_mahasiswa() 
+# DaftarNilaiMahasiswa.py
+
+class DaftarNilaiMahasiswa:
+    def __init__(self):
+        # Inisialisasi daftar mahasiswa
+        self.daftar_mahasiswa = []
+
+    def tambah(self, nama, nilai):
+        # Menambahkan data mahasiswa
+        self.daftar_mahasiswa.append({"nama": nama, "nilai": nilai})
+        print(f"Data mahasiswa {nama} berhasil ditambahkan.")
+
+    def tampilkan(self):
+        # Menampilkan seluruh data mahasiswa
+        if not self.daftar_mahasiswa:
+            print("Tidak ada data mahasiswa.")
+        else:
+            print("Daftar Nilai Mahasiswa:")
+            for mahasiswa in self.daftar_mahasiswa:
+                print(f"Nama: {mahasiswa['nama']}, Nilai: {mahasiswa['nilai']}")
+
+    def hapus(self, nama):
+        # Menghapus data berdasarkan nama mahasiswa
+        for mahasiswa in self.daftar_mahasiswa:
+            if mahasiswa['nama'] == nama:
+                self.daftar_mahasiswa.remove(mahasiswa)
+                print(f"Data mahasiswa {nama} berhasil dihapus.")
+                return
+        print(f"Data mahasiswa dengan nama {nama} tidak ditemukan.")
+
+    def ubah(self, nama, nilai_baru):
+        # Mengubah data nilai mahasiswa berdasarkan nama
+        for mahasiswa in self.daftar_mahasiswa:
+            if mahasiswa['nama'] == nama:
+                mahasiswa['nilai'] = nilai_baru
+                print(f"Nilai mahasiswa {nama} berhasil diubah menjadi {nilai_baru}.")
+                return
+        print(f"Data mahasiswa dengan nama {nama} tidak ditemukan.")
+
+# Penggunaan program
+if __name__ == "__main__":
+    daftar = DaftarNilaiMahasiswa()
+    
+    # Menambah data mahasiswa
+    daftar.tambah("Alice", 85)
+    daftar.tambah("Bob", 90)
+    
+    # Menampilkan data
+    daftar.tampilkan()
+    
+    # Mengubah nilai mahasiswa
+    daftar.ubah("Alice", 95)
+    
+    # Menampilkan data setelah diubah
+    daftar.tampilkan()
+    
+    # Menghapus data mahasiswa
+    daftar.hapus("Bob")
+    
+    # Menampilkan data setelah dihapus
+    daftar.tampilkan()
+
 ```
 
 Penjelasan: 
