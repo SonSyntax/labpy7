@@ -1,5 +1,10 @@
 # labpy7
 
+## Dafar nilai mahasiswa menggunakan method
+
+![bbb](https://github.com/user-attachments/assets/c29d082e-de60-4fc2-a489-ec62794bc93b)
+
+
 ```python
 # DaftarNilaiMahasiswa.py
 
