@@ -83,3 +83,10 @@ Penjelasan:
 
 ![dgr](https://github.com/user-attachments/assets/2c1e1bad-e327-465c-a924-9727b8b22e87)
 
+<p>flowchart</p>
+
+![flow bp 1](https://github.com/user-attachments/assets/58437db1-b69e-436c-8761-f543edfa6973)
+
+![flo bp2](https://github.com/user-attachments/assets/23b06cb3-6b89-4bbd-996a-28d1572111ea)
+
+
